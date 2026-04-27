@@ -7831,6 +7831,13 @@ body.out .swiper-slide-active .portfolio-slider-fade {
 	background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+	.video-content-bg {
+		height: 0;
+		padding-bottom: 56.25%;
+	}
+}
+
 .video-play-button {
   	position: absolute;
   	z-index: 3;
