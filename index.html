@@ -211,7 +211,8 @@
 			
 			<!-- video-content-bg start -->
 			<div class="video-content-bg" style="position:relative;">
-				<iframe src="https://www.youtube.com/embed/av8Sg0ZdJc8?autoplay=1&mute=1&loop=1&playlist=av8Sg0ZdJc8&controls=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width:100%;height:100%;position:absolute;top:0;left:0;"></iframe>
+				<div id="yt-player" style="width:100%;height:100%;position:absolute;top:0;left:0;"></div>
+				<button id="yt-mute-btn" onclick="ytToggleMute()" style="position:absolute;bottom:20px;right:20px;z-index:10;background:rgba(0,0,0,0.65);color:#fff;border:1px solid rgba(255,255,255,0.5);padding:8px 18px;cursor:pointer;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-family:inherit;">Unmute</button>
 			</div><!-- video-content-bg end -->
 			
 			<!-- flex-min-height-box start -->
@@ -637,8 +638,25 @@
 			</div><!-- flex-container end -->
 		</footer><!-- footer end -->
 		
-		<!-- scripts --> 
-        <script src="assets/js/plugins.js"></script> 
+		<!-- scripts -->
+        <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+        var ytPlayer, ytMuted = true;
+        function onYouTubeIframeAPIReady() {
+            ytPlayer = new YT.Player('yt-player', {
+                videoId: 'av8Sg0ZdJc8',
+                playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: 'av8Sg0ZdJc8', controls: 0, rel: 0, modestbranding: 1 },
+                events: { onReady: function(e) { e.target.playVideo(); } }
+            });
+        }
+        function ytToggleMute() {
+            if (!ytPlayer) return;
+            ytMuted ? ytPlayer.unMute() : ytPlayer.mute();
+            ytMuted = !ytMuted;
+            document.getElementById('yt-mute-btn').textContent = ytMuted ? 'Unmute' : 'Mute';
+        }
+        </script>
+        <script src="https://www.youtube.com/iframe_api"></script>
 	</body>
 </html>
