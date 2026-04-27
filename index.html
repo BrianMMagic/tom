@@ -211,9 +211,8 @@
 			
 			<!-- video-content-bg start -->
 			<div style="background-color:#111517;padding-top:60px;">
-				<div class="video-content-bg" style="position:relative;background-color:#111517;">
-					<div id="yt-player" style="width:100%;height:100%;position:absolute;top:0;left:0;"></div>
-					<button id="yt-mute-btn" onclick="ytToggleMute()" style="position:absolute;bottom:20px;right:20px;z-index:10;background:rgba(0,0,0,0.65);color:#fff;border:1px solid rgba(255,255,255,0.5);padding:8px 18px;cursor:pointer;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-family:inherit;">Unmute</button>
+				<div class="video-content-bg" style="position:relative;height:0;padding-bottom:56.25%;background-color:#111517;">
+					<iframe src="https://www.youtube.com/embed/Mjyuv6VBzco?rel=0&modestbranding=1" style="width:100%;height:100%;position:absolute;top:0;left:0;" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div><!-- video-content-bg end -->
 			
@@ -643,22 +642,5 @@
 		<!-- scripts -->
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-        var ytPlayer, ytMuted = true;
-        function onYouTubeIframeAPIReady() {
-            ytPlayer = new YT.Player('yt-player', {
-                videoId: 'Mjyuv6VBzco',
-                playerVars: { autoplay: 1, mute: 1, loop: 1, playlist: 'Mjyuv6VBzco', controls: 0, rel: 0, modestbranding: 1 },
-                events: { onReady: function(e) { e.target.playVideo(); } }
-            });
-        }
-        function ytToggleMute() {
-            if (!ytPlayer) return;
-            ytMuted ? ytPlayer.unMute() : ytPlayer.mute();
-            ytMuted = !ytMuted;
-            document.getElementById('yt-mute-btn').textContent = ytMuted ? 'Unmute' : 'Mute';
-        }
-        </script>
-        <script src="https://www.youtube.com/iframe_api"></script>
 	</body>
 </html>
