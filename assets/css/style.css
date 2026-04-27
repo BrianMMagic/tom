@@ -4779,9 +4779,9 @@ body.anim .load-title-fill:after {
     -webkit-transform: translateY(30px);
         -ms-transform: translateY(30px);
             transform: translateY(30px);
-    -webkit-transition: 1s cubic-bezier(.767, .01, .18, 1.01);
-    	-o-transition: 1s cubic-bezier(.767, .01, .18, 1.01);
-			transition: 1s cubic-bezier(.767, .01, .18, 1.01);
+    -webkit-transition: 0.4s cubic-bezier(.767, .01, .18, 1.01);
+    	-o-transition: 0.4s cubic-bezier(.767, .01, .18, 1.01);
+			transition: 0.4s cubic-bezier(.767, .01, .18, 1.01);
 }
 
 .fade-anim-box.fade-anim {
