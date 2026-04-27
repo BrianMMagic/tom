@@ -1476,6 +1476,11 @@ body,
 	z-index: 2;
 }
 
+main {
+	position: relative;
+	z-index: 2;
+}
+
 /* 3.1. Animsition-overlay */
 .animsition-overlay-slide {
   	background-color: transparent;

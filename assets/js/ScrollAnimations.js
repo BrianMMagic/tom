@@ -3,7 +3,7 @@
 
     var pluginName = "scrollAnimations",
         defaults = {
-            offset: 0.5
+            offset: 0.1
         };
 
     function ScrollAnimations(element, options) {
