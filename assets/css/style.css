@@ -3337,7 +3337,8 @@ body,
 	}
 	
 	.medium-title {
-		font-size: 25px;
+		font-size: 5.5vw;
+		letter-spacing: 1px;
 	}
 
    	.large-title,
