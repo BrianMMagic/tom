@@ -5107,6 +5107,7 @@ body.anim .load-title-fill:after {
 	min-width: 100%;
 	max-width: 100%;
 	position: relative;
+	z-index: 3;
 }
 
 .footer:before {
@@ -5162,7 +5163,7 @@ body.anim .load-title-fill:after {
 }
 
 @media only screen and (max-width: 767px) {
-	
+
 	.footer-center-mobile {
 		display: -webkit-box;
 			display: -ms-flexbox;
@@ -5171,12 +5172,25 @@ body.anim .load-title-fill:after {
 		    -ms-flex-pack: center;
 		        justify-content: center;
 	}
-	
+
 	.footer-menu,
 	.footer-social {
 		text-align: center;
 	}
-	
+
+	.footer .top-bottom-padding-90 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.footer .bottom-padding-60 {
+		padding-bottom: 20px;
+	}
+
+	.footer-logo {
+		width: 70px;
+	}
+
 }
 
 /*--------------------------------------------------------------
@@ -8500,7 +8514,7 @@ Video facade player
 	-webkit-box-sizing: border-box;
 	    box-sizing: border-box;
 	border: none;
-	border-bottom: 1px solid rgba(250,250,250,.4);
+	border-bottom: 1px solid rgba(250,250,250,.2);
 	padding: 0 0 10px 0;
 	margin-bottom: 40px;
 	font-size: 12px;
@@ -8540,11 +8554,11 @@ Video facade player
 	z-index: 2;
 	pointer-events: none;
 	font-family: 'Oswald', sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	color: white;
-	opacity: .7;
+	opacity: 1;
 	-webkit-transform: translateY(-28px) scale(.8);
 	    -ms-transform: translateY(-28px) scale(.8);
 	        transform: translateY(-28px) scale(.8);
@@ -9399,10 +9413,10 @@ textarea.form-input {
 .tcm-label {
 	display: block;
 	font-family: 'Oswald', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	color: rgba(255,255,255,0.38);
+	color: rgba(255,255,255,0.85);
 	margin-bottom: 10px;
 	-webkit-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -9417,7 +9431,7 @@ textarea.form-input {
 	width: 100%;
 	background: transparent;
 	border: none;
-	border-bottom: 1px solid rgba(255,255,255,0.12);
+	border-bottom: 1px solid rgba(255,255,255,0.28);
 	padding: 10px 0 12px;
 	font-family: 'Oswald', sans-serif;
 	font-size: 15px;
