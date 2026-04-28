@@ -20,6 +20,7 @@
 		<!-- styles -->	
         <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/cta-enhance.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<!-- to-top-btn start -->
@@ -70,7 +71,7 @@
 				<li class="nav-box nav-bg-change active">
 						<span class="nav-btn active" data-text="Home">Home</span>
 	                                </a>
-					<div class="nav-bg" style="background-image: url(assets/images/bg3.jpg);"></div>
+					<div class="nav-bg" style="background-image: url(assets/images/bg17.webp);"></div>
 				</li><!-- nav-box end -->
 
 				<!-- nav-box start -->
@@ -94,7 +95,7 @@
 					<a href="contact.html" class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Contact">Contact</span>
 					</a>
-					<div class="nav-bg" style="background-image: url(assets/images/bg3.jpg);"></div>
+					<div class="nav-bg" style="background-image: url(assets/images/bg17.webp);"></div>
 				</li><!-- nav-box end -->
 			</ul><!-- nav-menu end -->
 		</nav><!-- nav-container end -->
@@ -212,7 +213,13 @@
 			<!-- video-content-bg start -->
 			<div style="background-color:#111517;padding-top:60px;">
 				<div class="video-content-bg" style="position:relative;height:0;padding-bottom:56.25%;background-color:#111517;">
-					<iframe src="https://www.youtube.com/embed/Mjyuv6VBzco?rel=0&modestbranding=1" style="width:100%;height:100%;position:absolute;top:0;left:0;" frameborder="0" allowfullscreen></iframe>
+					<div id="video-cover" onclick="document.getElementById('video-cover').style.display='none';document.getElementById('yt-iframe').style.display='block';" style="position:absolute;top:0;left:0;width:100%;height:100%;cursor:pointer;">
+						<img src="assets/images/bg18.webp" alt="Tom Collett Magic - Watch the Show" style="width:100%;height:100%;object-fit:cover;display:block;">
+						<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80px;height:80px;background:rgba(255,0,0,0.85);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+							<div style="width:0;height:0;border-top:20px solid transparent;border-bottom:20px solid transparent;border-left:32px solid #fff;margin-left:6px;"></div>
+						</div>
+					</div>
+					<iframe id="yt-iframe" src="https://www.youtube.com/embed/Mjyuv6VBzco?rel=0&modestbranding=1&autoplay=1" style="width:100%;height:100%;position:absolute;top:0;left:0;display:none;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 				</div>
 			</div><!-- video-content-bg end -->
 			
@@ -293,7 +300,7 @@
 								<!-- column start -->
 								<div class="six-columns top-padding-60">
 									<a href="about.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box">
-										<div class="portfolio-content-bg hover-img" style="background-image:url(assets/images/bg3.jpg)"></div>
+										<div class="portfolio-content-bg hover-img" style="background-image:url(assets/images/bg17.webp)"></div>
 									</a>
 								</div><!-- column end -->
 							</div><!-- flex-container end -->
@@ -419,7 +426,6 @@
 					<div class="swiper-wrapper">
 						<!-- slide start -->
 						<div class="swiper-slide text-center">
-							<img src="assets/images/testimonials/test1.jpg" alt="author">
 							<div class="testimonials-content">
 								<p class="text-color-4 p-style-bold">"A True A+ Magician! I'm an event manager and Tom performed at my Holiday Party. He strolled to each group with different sets of magic tricks during the course of the evening (~3 hours). Everyone, myself included, really enjoyed it - there was a lot of laughter and merriment, because of him! I will definitely be working with Tom again in the near future, can't recommend him enough!" ⭐⭐⭐⭐⭐</p>
 							</div>
@@ -429,7 +435,6 @@
 						</div><!-- slide end -->
 						<!-- slide start -->
 						<div class="swiper-slide text-center">
-							<img src="assets/images/testimonials/test2.jpeg" alt="author">
 							<div class="testimonials-content">
 								<p class="text-color-4 p-style-bold">"Tom Collett, Magician Extraordinaire, was great to work with! A total professional. Personable & excellent at his craft. Would not hesitate to hire him again for one of our charters!" ⭐⭐⭐⭐⭐</p>
 							</div>
@@ -439,7 +444,6 @@
 						</div><!-- slide end -->
 						<!-- slide start -->
 						<div class="swiper-slide text-center">
-							<img src="assets/images/testimonials/test3.jpeg" alt="author">
 							<div class="testimonials-content">
 								<p class="text-color-4 p-style-bold">"Tom was the perfect addition to our wedding. Not only did we love the tricks he performed, but he made the experience extremely easy to manage. Tom took every step to make sure that our stress was minimized while giving us a 5-Star Experience. He also gave us a special suprise that, as the bride and groom, we will always remember. I would absolutely recommend Tom for your wedding or event where you want to create memorable moments for you and your guests." ⭐⭐⭐⭐⭐</p>
 							</div>
@@ -449,7 +453,6 @@
 						</div><!-- slide end -->
 						<!-- slide start -->
 						<div class="swiper-slide text-center">
-							<img src="assets/images/testimonials/test5.jpeg" alt="author">
 							<div class="testimonials-content">
 								<p class="text-color-4 p-style-bold">"I hired Tom for a Corporate Event, performing Strolling and Stage. He was a consummate professional, in every way, from initial contact, right up to show time, and then, his Magic was Extraordinary! One of the best I've seen. Highly Recommended!" ⭐⭐⭐⭐⭐</p>
 							</div>
