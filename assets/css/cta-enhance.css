@@ -19,6 +19,12 @@
     color: #ef0d33 !important;
 }
 
+@media (max-width: 767px) {
+    .cta-availability-wrap {
+        bottom: 120px !important;
+    }
+}
+
 .border-btn-red.border-btn-box:before,
 .border-btn-red.border-btn-box:after,
 .border-btn-red .border-btn-inner:before,
